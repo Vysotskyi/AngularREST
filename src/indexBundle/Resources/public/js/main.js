@@ -2,7 +2,7 @@ var questApp = angular.module('questApp', ["ngRoute", 'ui.sortable', 'ui.bootstr
     .config(function($routeProvider){
         $routeProvider.when('/',
             {
-                templateUrl:'/web/views/main.html',
+                templateUrl:'/views/main.html',
                 controller:'mainController'
             });
     });
@@ -46,7 +46,7 @@ questApp.controller('mainController', ['$scope', '$http', '$uibModal', '$filter'
         $scope.editProject = function(project){
             var modalInstance = $uibModal.open({
                 animation: false,
-                templateUrl: '/web/views/modal.html',
+                templateUrl: '/views/modal.html',
                 controller: 'modalController',
                 size: '',
                 resolve: {
@@ -68,7 +68,7 @@ questApp.controller('mainController', ['$scope', '$http', '$uibModal', '$filter'
         $scope.addProject = function(){
             var modalInstance = $uibModal.open({
                 animation: false,
-                templateUrl: '/web/views/modal.html',
+                templateUrl: '/views/modal.html',
                 controller: 'modalController',
                 size: '',
                 resolve: {
@@ -140,7 +140,7 @@ questApp.controller('mainController', ['$scope', '$http', '$uibModal', '$filter'
             project.editTask = function(task){
                 var modalInstance = $uibModal.open({
                     animation: false,
-                    templateUrl: '/web/views/modal.html',
+                    templateUrl: '/views/modal.html',
                     controller: 'modalController',
                     size: '',
                     resolve: {
@@ -165,7 +165,7 @@ questApp.controller('mainController', ['$scope', '$http', '$uibModal', '$filter'
             project.addTask = function(){
                 var modalInstance = $uibModal.open({
                     animation: false,
-                    templateUrl: '/web/views/modal.html',
+                    templateUrl: '/views/modal.html',
                     controller: 'modalController',
                     size: '',
                     resolve: {

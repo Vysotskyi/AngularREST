@@ -1,0 +1,4 @@
+restBundle\Entity\Project:
+    properties:
+        name:
+            - NotBlank: ~

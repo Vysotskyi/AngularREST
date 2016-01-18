@@ -1,0 +1,12 @@
+project_service:
+    type: rest
+    resource: restBundle\Controller\ProjectController
+    name_prefix:  api_
+task_service:
+    type: rest
+    resource: restBundle\Controller\TaskController
+    name_prefix:  api_
+position_service:
+    type: rest
+    resource: restBundle\Controller\PositionController
+    name_prefix:  api_

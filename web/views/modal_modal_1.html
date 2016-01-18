@@ -1,0 +1,45 @@
+<form name="editNameForm" novalidate ng-submit="save()">
+    <div class="modal-header">
+        <h3 class="modal-title" data-ng-bind="modal.title"></h3>
+    </div>
+    <div class="modal-body">
+        <div data-ng-if="modal.type == 'project'">
+            <input type="text"
+                   name="name"
+                   class="form-control"
+                   data-ng-model="selected.item.name"
+                   value="{{selected.item.name}}"
+                   placeholder="Enter name of project"
+                   required>
+        </div>
+        <div data-ng-if="modal.type == 'task'">
+            <input type="text"
+                   name="name"
+                   class="form-control"
+                   data-ng-model="selected.item.title"
+                   value="{{selected.item.title}}"
+                   placeholder="Enter title of task"
+                   required><br>
+            <p class="input-group">
+                <input required name="date" type="text" class="form-control col-md-10" uib-datepicker-popup="{{format}}" date-type="string" ng-model="selected.item.date" is-open="popup.opened" min-date="minDate" max-date="maxDate" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" alt-input-formats="altInputFormats" readonly/>
+                <span class="input-group-btn col-md-2">
+                    <button type="button" class="btn btn-default" ng-click="open()"><i class="glyphicon glyphicon-calendar"></i></button>
+                </span>
+            </p>
+            <select name="status" class="form-control" data-ng-model="selected.item.status" required>
+                <option value="1" ng-selected="selected.item.status == 1 ? 'selected': ''">Minor</option>
+                <option value="2" ng-selected="selected.item.status == 2 ? 'selected': ''">Major</option>
+                <option value="3" ng-selected="selected.item.status == 3 ? 'selected': ''">Critical</option>
+            </select>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-info" type="submit"
+                data-ng-if="modal.type == 'project'"
+                ng-disabled="!editNameForm.name.$valid">OK</button>
+        <button class="btn btn-info" type="submit"
+                ng-disabled="!editNameForm.name.$valid || !editNameForm.date.$valid || !editNameForm.status.$valid"
+                data-ng-if="modal.type == 'task'">OK</button>
+        <button class="btn btn-primary" type="button" ng-click="cancel()">Cancel</button>
+    </div>
+</form>

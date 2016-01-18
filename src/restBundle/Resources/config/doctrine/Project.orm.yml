@@ -1,0 +1,21 @@
+restBundle\Entity\Project:
+    type: entity
+    table: null
+    repositoryClass: restBundle\Repository\ProjectRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: 255
+            notnull: true
+        sorted:
+            type: integer
+        ord:
+            type: integer
+
+    lifecycleCallbacks: {  }

@@ -1,0 +1,8 @@
+index:
+    resource: "@indexBundle/Resources/config/routing.yml"
+    prefix:   /
+
+restful_services:
+    resource: "@restBundle/Resources/config/routing.yml"
+    type:     rest
+    prefix:   /api

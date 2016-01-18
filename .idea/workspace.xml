@@ -113,6 +113,7 @@
         <option value="$PROJECT_DIR$/src/restBundle/Controller/ProjectController.php" />
         <option value="$PROJECT_DIR$/src/restBundle/Controller/TaskController.php" />
         <option value="$PROJECT_DIR$/src/indexBundle/Resources/public/js/main.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -943,6 +944,14 @@
           <folding>
             <element signature="e#41#89#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="627">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

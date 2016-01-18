@@ -1,4 +1,1 @@
-mev
-===
-
-A Symfony project created on January 14, 2016, 8:52 pm.
+Symfony3 + AngularJS 1.4.8 (REST API)

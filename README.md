@@ -7,3 +7,5 @@ Installation and Setup:
 5. Import mev.sql to DB (file located in root of project folder) or use "php bin/console doctrine:schema:update --force" for automatic generate  
   
 After this steps you can use app.   
+  
+![Alt text](http://makescreen.ru/i/44a0b053871f1ec517c3d1325d54f0.jpg)
